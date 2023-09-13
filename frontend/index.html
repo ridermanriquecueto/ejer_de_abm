@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD de Alumnos</title>
+</head>
+<body>
+    <h1>CRUD de Alumnos</h1>
+
+    <form id="alumno-form">
+        <input type="hidden" id="alumno-legajo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required>
+        <button id="guardar">Guardar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Número de legajo</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="alumno-list">
+            <!-- Los datos de los alumnos se mostrarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
